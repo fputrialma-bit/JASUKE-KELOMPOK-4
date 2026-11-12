@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jasuke</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ========== CEO: HEADER ========== -->
+<header id="header-section" data-role="CEO">
+<div class="container header-inner">
+<a href="#hero-section" class="brand">Jasuke</a>
+<nav>
+<a href="#hero-section">Beranda</a>
+<a href="#catalog-section">Katalog</a>
+<a href="#calc-section">Kalkulator</a>
+</nav>
+</div>
+</header>
+
+<main>
+<!-- ========== PM 1: HERO ========== -->
+<section id="hero-section" data-role="PM">
+<div class="container hero-inner">
+<h1>Jasuke: jagung susu keju, manis gurihnya pas.</h1>
+<p class="subtitle">Jasuke hadir dengan jagung susu keju segar dalam berbagai ukuran dan topping, dari porsi pribadi sampai pesanan banyak, dengan harga yang ramah di kantong.</p>
+<ul class="benefits">
+<li><strong>Bahan segar setiap hari.</strong> Jagung manis dan keju diolah saat dipesan.</li>
+<li><strong>Topping sesuai selera.</strong> Pilih coklat, meses, susu stroberi, atau keju ekstra.</li>
+<li><strong>Harga ramah di kantong.</strong> Mulai Rp10.000 per porsi, dengan diskon 10% untuk pembelian minimal 3 porsi.</li>
+</ul>
+<a href="#calc-section" class="btn-cta">Hitung biaya sekarang</a>
+</div>
+</section>
+
+<!-- ========== PM 2: KATALOG ========== -->
+<section id="catalog-section" data-role="PM">
+<div class="container">
+<h2>Pilih paket yang sesuai</h2>
+<p class="section-desc">Gunakan kode promo <strong>BISDIG</strong> untuk diskon 10%.</p>
+<div class="cards">
+<article class="card">
+<h3>Paket Jasuke Reguler</h3>
+<p class="price">Rp10.000 per porsi</p>
+<p>Jagung manis, susu kental manis, dan keju parut dalam cup 200 ml. Cocok untuk camilan pribadi.</p>
+<p class="promo">Kode promo: BISDIG (diskon 10%)</p>
+</article>
+<article class="card featured">
+<h3>Paket Jasuke Spesial</h3>
+<p class="price">Rp15.000 per porsi</p>
+<p>Cup besar 300 ml dengan keju ekstra dan topping pilihan (coklat, meses, atau susu stroberi). Cocok untuk berbagi berdua.</p>
+<p class="promo">Kode promo: BISDIG (diskon 10%)</p>
+</article>
+<article class="card">
+<h3>Paket Jasuke Rapat/Acara</h3>
+<p class="price">Rp12.000 per porsi</p>
+<p>Porsi massal dalam kemasan rapi dan sendok sekali pakai, siap antar ke kelas, kantor, atau acara kampus.</p>
+<p class="promo">Kode promo: BISDIG (diskon 10%)</p>
+</article>
+</div>
+</div>
+</section>
+
+<!-- ========== SE 1: KALKULATOR ========== -->
+<section id="calc-section" data-role="SE">
+<div class="container">
+<h2>Kalkulator biaya</h2>
+<p class="section-desc">Diskon 10% berlaku jika memakai kode BISDIG atau membeli minimal 3 porsi.</p>
+<div class="calc-box">
+<label for="paket">Pilih paket</label>
+<select id="paket">
+<option value="10000">Paket Jasuke Reguler - Rp10.000</option>
+<option value="15000">Paket Jasuke Spesial - Rp15.000</option>
+<option value="12000">Paket Jasuke Rapat/Acara - Rp12.000</option>
+</select>
+
+<label for="jumlah">Jumlah porsi pesanan</label>
+<input type="number" id="jumlah" min="1" value="1">
+
+<label for="promo">Kode promo (opsional)</label>
+<input type="text" id="promo" placeholder="Contoh: BISDIG">
+
+<button type="button" id="btn-hitung" onclick="hitungTotal()">Hitung total</button>
+
+<div id="hasil">Isi formulir lalu tekan "Hitung total".</div>
+</div>
+</div>
+</section>
+</main>
+
+<!-- ========== CEO: FOOTER ========== -->
+<footer id="footer-section" data-role="CEO">
+<div class="container">
+<p>&copy; 2026 Jasuke. Hak cipta dilindungi.</p>
+<p>WebDev (ISI HURUF KELAS) - Kelompok 4</p>
+<p>Tim: Faiqah Putri Alma, Nadia Sara, Kanaya Aulia Azahra, Yasmin Athira, Daniella Ghina Kurnia, Naila Apriliani Putri</p>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
